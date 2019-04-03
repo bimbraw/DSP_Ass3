@@ -16,6 +16,7 @@ The purpose of this assignment is to guide you through the important concepts ab
 Question 0: Setting up a MATLAB script (0 points)
 
 Create a MATLAB script (.m file which is not a function) titled ass3main.m. This script should call the functions below in the specified order and generate all the required plots (with proper axes and labels wherever required). This script will be executed for grading.
+
 Question 1:  Noise generation (30 points)
 
 Implement a matlab function y = myNoiseGen(num_samples, w, noise_type) that will generate dither noises with different probability density functions (pdf): a) rectangular, b) triangular, and c) triangular using high-pass filtering. The output y is a column vector (num_samples x 1) of your generated noise. Note: For rectangular pdf noise, the amplitude = range( -delta/2, delta/2 ); For triangular pdf noise, the amplitude = range( -delta, delta ). Delta = 1/(2^(w -1)), w is the word length that user can determine. Function variable ‘noise_type' is a string: ‘rect’, ‘tri’, ‘hp’. (Useful functions: rand( ), strcmp( ), diff( ))
