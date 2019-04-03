@@ -32,3 +32,8 @@ Question 3: Noise Shaping (30 points)
 Implement a matlab function y = myNoiseShape( x, w, noise_type) that performs first order noise shaping on your input signal x. In this part, you will have to implement the difference equation described in class. The output y is a numSamples * 1 vector of your noise shaped and quantized signal. x, w and noise_type have the same definitions as in Question 2. Noise shape should also include dithering.
 Load sine-440-96k.wav
 Play media comment. on your main script. Using this as the input signal, plot the magnitude spectrum of your quantization error for w = 4, noiseType = 'tri'. Hint: quantization error e(i) = y(i) - x(i). Useful functions: pwelch( ). 
+
+Question 4: Discussion (20 points) 
+
+Load flute-A4-96k.wav
+Play media comment. in your main script.  Using this as the input signal, plot the magnitude spectrum of the outputs from these functions: myQuantize(), myDither(), myNoiseShape() for two different cases: w= 4 and w = 8 (use noiseType = 'hp' for all cases). Listen to the sounds of the outputs and discuss the results. What are the differences between these three approaches in both cases?  
