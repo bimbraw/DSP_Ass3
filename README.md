@@ -25,6 +25,7 @@ Question 2: Dither & Quantization (20 points)
 
 Implement a matlab function y = myQuantize(x,w) that will quantize the input signal 'x' using the the word-length 'w'. Both 'x' and 'y' are column vectors (num_samples x 1). w has the same definition as Question 1.1. Note: use mid-tread quantization. You may adapt the function that you wrote for the in-class exercise for this part. 
 Implement a matlab function y = myDither( x, w, noise_type) that will generate and add a dither noise to the signal and quantize it. x is the input signal (column vector with dimension num_samples x 1). w and noise_type have the same definition as in Question 1.1. The output y is a column vector (num_samples x 1) vector of your dithered and quantized signal. Hint: The dither noise should have the same word length as the final output. Use myQuantize() and myNoiseGen() from the previous questions. 
+
 Question 3: Noise Shaping (30 points)
 
 Implement a matlab function y = myNoiseShape( x, w, noise_type) that performs first order noise shaping on your input signal x. In this part, you will have to implement the difference equation described in class. The output y is a numSamples * 1 vector of your noise shaped and quantized signal. x, w and noise_type have the same definitions as in Question 2. Noise shape should also include dithering.
